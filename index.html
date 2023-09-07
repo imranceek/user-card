@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal va card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <button class="modal-button" onclick="openModal()">Yaratish</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Modal</h2>
+          <input type="url" id="url" class="modal-input" placeholder="URL" required><br>
+          <input type="text" id="name" class="modal-input" placeholder="To'liq ism" required><br>
+          <input type="tel" id="tel" class="modal-input" placeholder="Telefon raqami" required><br>
+          <input type="number" id="number" class="modal-input" placeholder="Raqam" required><br>
+          <label for="Erkak">Erkak</label>
+          <input type="radio" id="Erkak" name="option" value="Erkak" >
+          <label for="Ayol">Ayol</label>
+          <input type="radio" id="Ayol" name="option" value="Ayol"><br>
+          <button onclick="createCard()" class="modal-button-card">Yaratish</button>
+        </div>
+      </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
